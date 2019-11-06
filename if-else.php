@@ -8,17 +8,22 @@
 
 <?php
 
-$ilosc=15;
+$ilosc=18;
 $klient="Krzysztof";
 
 if ($ilosc == 15) {
 	echo 'Zmienna $ilosc jest równa 15!' . "<br/>";
 	$sprawdzenie=true;
 }
+elseif ($ilosc>15) {
+	echo 'Zmienna $ilosc jest większa niż 15!'."<br/>";
+	$sprawdzenie=false;
+}
+	
 
 else {
-	echo 'Zmienna $ilosc ma wartość inną niż 15' . "<br/>";
-	$sprawdzenie=false;
+	echo 'Zmienna $ilosc jest mniejsza niż 15' . "<br/>";
+	$sprawdzenie=true;
 }
 
 if ($sprawdzenie == true)
