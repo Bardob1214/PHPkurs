@@ -5,7 +5,7 @@
 		<title>Instrukcja warunkowa IF...ELSE</title>
 </head>
 <body>
-
+  
 <?php
 
 $ilosc=18;
