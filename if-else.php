@@ -5,18 +5,18 @@
 		<title>Instrukcja warunkowa IF...ELSE</title>
 </head>
 <body>
-  
+
 <?php
 
-$ilosc=18;
+$ilosc=17;
 $klient="Krzysztof";
 
-if ($ilosc == 15) {
-	echo 'Zmienna $ilosc jest równa 15!' . "<br/>";
+if (($ilosc>15) && ($ilosc<46)) {
+	echo 'Zmienna $ilosc jest większa niż 15 i mniejsza niż 45!' . "<br/>";
 	$sprawdzenie=true;
 }
 elseif ($ilosc>15) {
-	echo 'Zmienna $ilosc jest większa niż 15!'."<br/>";
+	echo 'Zmienna $ilosc leży poza zakresem 16-44!'."<br/>";
 	$sprawdzenie=false;
 }
 	
@@ -26,7 +26,7 @@ else {
 	$sprawdzenie=true;
 }
 
-if ($sprawdzenie == true)
+if (!$sprawdzenie == false)
 	echo 'Zmienna $sprawdzenie jest TRUE' . "<br/>";
 /*
 Operatory porównania:
@@ -43,4 +43,18 @@ Operatory	Zwraca TRUE, jeśli:
 >=			Większy lub równy
 */
 
+/*
+Podstawowe operatory logiczne
+------------------------------------------
+Symbol  Nazwa  Przykład
+------  -----  --------
+!       NOT    np. !$wlaczony
+(zwraca TRUE, jeśli zmienna $wlaczony jest FALSE)
+
+&&      AND    np. $ilosc -- 10 && $klient=="Bogdan"
+(zwraca TRUE, jeśli oba porównania są TRUE)
+
+||      OR     np. $ilosc > 10 || $kwota > 100
+(zwraca TRUE, jeśli oba porównania lub jedno z nich jest TRUE)
+*/
 ?>
