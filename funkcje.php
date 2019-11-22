@@ -16,6 +16,22 @@ function napisz($kurs, $opis) {
 
 napisz('PHP','Kurs o języku PHP');
 
+function rabat($kwota,$procent) {
+	global $wynik;
+	$wynik=$kwota-($kwota*$procent/100);
+	return $wynik;
+}
+echo rabat(100,10);
+echo $wynik;
+
+function licznik() {
+	static $licznik=0;
+	$licznik++;
+	echo $licznik."<br>\n";
+}
+echo"<hr>\n";
+for ($i=1;$i<=5;$i++)
+	licznik();
 ?>
 </body>
 </html>
